@@ -1,0 +1,28 @@
+<Incorrect>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text: "LOGIN ERROR!"
+            font_size: 100
+            canvas.before:
+                Color:
+                    rgba: 255, 0, 0, 1
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+        Label:
+            text: "Incorrect Username or Password."
+            font_size: 70
+
+        AnchorLayout:
+            anchor_x: 'center'
+            anchor_y: 'top'
+
+            Button:
+                text: "Go Back"
+                font_size: 60
+                size_hint: None, None
+                size: 400, 200
+                on_press: root.disconnect()
