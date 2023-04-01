@@ -1,0 +1,164 @@
+#:import MDCard kivymd.uix.card.MDCard
+#:import MDRectangleFlatButton kivymd.uix.button.MDRectangleFlatButton
+#:import MDFillRoundFlatButton kivymd.uix.button.MDFillRoundFlatButton
+
+#:include info.kv
+
+<MenuButton@MDFillRoundFlatButton>:
+    font_size: '10sp'
+    size_hint_x: 1
+    text_color: 1, 1, 1, 1
+    md_bg_color: 1, 0.5, 0, 1
+
+<CarCard@MDCard>:
+    orientation: 'vertical'
+    size_hint_x: None
+    width: '300sp'
+    text: 'Car'
+    source: ''
+
+    Label:
+        text: root.text
+        underline: True
+        font_size: '25sp'
+        size_hint_y: 0.7
+        text_color: 0, 0, 0, 1
+
+    Image:
+        source: root.source
+        size_hint: 1, None
+        height: '200sp'
+        allow_stretch: True
+
+<InfoButton@MDRectangleFlatButton>:
+    md_bg_color: 1, 1, 1, 1
+    text_color: 0, 0, 0, 1
+    text: 'More info'
+    bold: True
+
+<Gallery>:
+    Screen:
+        BoxLayout:
+            orientation: 'vertical'
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size_hint: 1, 0.15
+                padding: '15sp'
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+
+                MenuButton:
+                    text: 'Speed Calculator'
+
+                Widget:
+                    size_hint_x: 0.3
+
+                MenuButton:
+                    text: 'Stopwatch'
+
+                Widget:
+                    size_hint_x: 0.3
+
+                MenuButton:
+                    text: 'Logout'
+                    md_bg_color: 1, 0, 0, 1
+                    on_press: root.disconnect()
+
+            Label:
+                text: 'My Gallery'
+                bold: True
+                text_size: self.size
+                halign: 'center'
+                font_size: '40sp'
+                size_hint: 1, None
+                height: 125
+                color: 255, 255, 255, 1
+
+            Label:
+                size_hint_y: 0.05
+
+            ScrollView:
+                do_scroll_x: False
+                do_scroll_y: True
+
+                BoxLayout:
+                    orientation: 'vertical'
+                    size_hint_y: None
+                    height: self.minimum_height
+
+                    Widget:
+                        size_hint_y: None
+                        height: '10sp'
+
+                    GridLayout:
+                        rows: 2
+                        cols: 2
+                        size_hint_y: None
+                        height: self.minimum_height
+                        row_default_height: '300dp'
+                        row_force_default: True
+                        spacing: 0, 50
+
+                        AnchorLayout:
+                            anchor_x: 'center'
+                            anchor_y: 'center'
+                            CarCard:
+                                source: 'assets/porsche.jpg'
+                                text: 'Porsche 911'
+                                md_bg_color: 0, 0, 1, 1
+                                AnchorLayout:
+                                    anchor_x: 'center'
+                                    anchor_y: 'center'
+                                    InfoButton:
+                                        on_press: root.get_info('porsche')
+
+                        AnchorLayout:
+                            anchor_x: 'center'
+                            anchor_y: 'center'
+                            CarCard:
+                                source: 'assets/lotus.jpg'
+                                text: 'Lotus Evora'
+                                md_bg_color: 1, 0, 0, 1
+                                AnchorLayout:
+                                    anchor_x: 'center'
+                                    anchor_y: 'center'
+                                    InfoButton:
+                                        on_press: root.get_info('lotus')
+
+                        AnchorLayout:
+                            anchor_x: 'center'
+                            anchor_y: 'center'
+                            CarCard:
+                                source: 'assets/chevrolet.jpg'
+                                text: 'Chevrolet Corvette'
+                                md_bg_color: 1, 0, 1, 1
+                                AnchorLayout:
+                                    anchor_x: 'center'
+                                    anchor_y: 'center'
+                                    InfoButton:
+                                        on_press: root.get_info('chevrolet')
+
+                        AnchorLayout:
+                            anchor_x: 'center'
+                            anchor_y: 'center'
+                            CarCard:
+                                source: 'assets/alfaromeo.jpg'
+                                text: 'Alfa Romeo 4C'
+                                md_bg_color: 0, 0.5, 0, 1
+                                AnchorLayout:
+                                    anchor_x: 'center'
+                                    anchor_y: 'center'
+                                    InfoButton:
+                                        on_press: root.get_info('alfaromeo')
+
+                    Widget:
+                        size_hint_y: None
+                        height: '10sp'
+
+
+

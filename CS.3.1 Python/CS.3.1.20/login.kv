@@ -1,0 +1,67 @@
+#:include incorrect.kv
+#:include gallery.kv
+
+<Login>
+    BoxLayout:
+        orientation: 'vertical'
+
+        Label:
+            text: 'Welcome'
+            text_size: self.size
+            halign: 'center'
+            font_size: 80
+            size_hint_y: None
+            height: '100dp'
+            color: 0, 0, 0, 1
+
+        # Username Section
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 300, 50
+
+            Label:
+                text: 'Username:'
+                font_size: 60
+                text_size: self.size
+                valign: 'center'
+                color: 0, 0, 0, 1
+
+            TextInput:
+                id: login
+                multiline: False
+                font_size: root.height / 15
+                cursor_color: 0, 0, 0, 1
+
+        # Password Section
+        BoxLayout:
+            orientation: 'vertical'
+            padding: 300, 50
+
+            Label:
+                text: 'Password:'
+                font_size: 60
+                text_size: self.size
+                valign: 'center'
+                color: 0, 0, 0, 1
+
+
+            TextInput:
+                id: password
+                multiline: False
+                font_size: root.height / 15
+                cursor_color: 0, 0, 0, 1
+                password: True
+
+        # Login Button
+        AnchorLayout:
+            anchor_x: 'center'
+            anchor_y: 'center'
+
+            Button:
+                text: 'Log In'
+                font_size: 60
+                size_hint: None, None
+                size: 400, 200
+
+                on_press: root.do_login(login.text, password.text)
+
