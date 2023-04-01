@@ -1,0 +1,23 @@
+import turtle
+
+turtle.shape("turtle")
+turtle.pensize(1)
+turtle.forward(100)
+turtle.stamp()
+turtle.pencolor("red")
+turtle.left(90)
+turtle.pensize(2)
+turtle.forward(100)
+turtle.stamp()
+turtle.pencolor("green")
+turtle.left(90)
+turtle.pensize(3)
+turtle.forward(100)
+turtle.stamp()
+turtle.pencolor("blue")
+turtle.left(90)
+turtle.pensize(4)
+turtle.forward(100)
+turtle.stamp()
+
+turtle.mainloop()
