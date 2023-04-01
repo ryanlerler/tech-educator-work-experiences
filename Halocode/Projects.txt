@@ -1,0 +1,20 @@
+Auto feeder - servo motor
+
+Auto door - Face Recognition AI + servo motor
+
+Smart home light - proximity sensor + LED
+
+Smart window - moisture sensor + servo motor
+
+Intruder alarm - proximity sensor + buzzer
+
+
+
+
+
+
+9 - 9.30 am Machine Learning
+9.30 - 9.45 am Project Briefing
+9.45 - 10.30 am Group Discussion
+10.30 - 10.50 am Group Presentation
+
