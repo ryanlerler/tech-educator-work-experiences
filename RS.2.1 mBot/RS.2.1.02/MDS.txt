@@ -1,0 +1,9 @@
+mbot too left 
+MDS = + 30
+left motor speed should increase = 50 + (+30) = 80
+right motor speed should decrease = 50 - (+30) = 20
+
+mbot too right 
+MDS = - 30
+left motor speed should decrease = 50 + (-30) = 20
+right motor speed should increase = 50 - (-30) = 80

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title> </title>
+  </head>
+  <body style="background-color:rgb(15,53,134)">
+    <div class="container">
+        <div class="row m-3">
+            <div class="col-md-12">
+                <h1 class="text-center p-3" style="color: bisque"> JavaScript Basics </h1>
+            </div>
+        </div>
+        <div class="row p-5" style="background-color: beige">
+            <div class="col-md-12">
+                <h2> Random Number Generator </h2>
+                <p class="mt-5" style="font-size:50px" id="num"> 999 </p>
+                <button type="button" class="btn btn-success" onclick="generateNumber()"> Magic!!! </button>
+            </div>
+        </div>
+
+        <div class="row p-5 mt-3" style="background-color: lightgray">
+            <div class="col-md-12">
+                <h2> Random Number Generator with Range </h2>
+                <p class="mt-5" style="font-size:50px" id="num2"> 999 </p>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Lower Range</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="lower" value="0">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Upper Range</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="upper" value="10000">
+                </div>
+
+                <button type="button" class="btn btn-success" onclick="generateNumberWithRange()"> Magic!!! </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script>
+        function generateNumber(){
+
+            document.getElementById("num").innerHTML = parseInt(Math.random()*100);
+
+        }
+
+        function generateNumberWithRange(){
+
+            var lower = parseInt(document.getElementById("lower").value);
+            var upper = parseInt(document.getElementById("upper").value);
+
+            document.getElementById("num2").innerHTML = Math.floor(Math.random()* (upper-lower)) + lower;
+
+            console.log("Lower Range: " + lower);
+            console.log("Upper Range: " + upper);
+            console.log("Random Number: " + parseInt(document.getElementById("num2").innerHTML));
+
+}
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
