@@ -1,0 +1,13 @@
+A1 Dance Dance Dance
+
+When green flag clicked
+forever
+	if distance < 10
+		call dance function
+		wait 10 sec
+		call stop function
+
+
+The codes above will make the dancing cat dance for 10 sec and stop then dance for 10 sec and stop forever if the obstacle remains nearby.
+
+That's why we need to create a variable to set dance to 1 for 10 sec then reset dance to 0, making the dancing cat stop after 10 sec even if the obstacle remains nearby.
