@@ -1,0 +1,17 @@
+Slide 21:
+Codes are for ball sprite, not goalkeeper
+
+Slide 30 & 31 / Step 25 & 26:
+
+Unnecessary steps as there are no "When I receive 'Win'/ 'Lose'" blocks corresponding to these broadcast messages and there are already blocks in the Text sprite template that demonstrate all the winning and losing conditions.
+
+Additional touch to Text sprite template:
+When I receive Goal:
+	if Ball = 0 and not Score = 5
+	switch costume to Goal (NOT Miss)
+
+When I receive Miss:
+	if Score = 0
+	switch costume to Miss
+	wait 1 sec
+	switch costume to 0

@@ -1,0 +1,8 @@
+Brick sprite:
+
+repeat 4
+	repeat 7
+		create clone of myself
+		change x by 65
+	set x to -195
+	change y by -35
