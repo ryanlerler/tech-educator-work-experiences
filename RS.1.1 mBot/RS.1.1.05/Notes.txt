@@ -1,0 +1,5 @@
+A1b Dodge Bot 2
+
+Without repeat until block, mbot may turn left or right randomly when the obstacle remains nearby.
+
+With repeat until block, mbot will keep turning left or keep turning right until the obstacle is > 50 cm away.
