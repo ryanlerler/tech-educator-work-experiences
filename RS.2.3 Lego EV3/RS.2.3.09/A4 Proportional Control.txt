@@ -1,0 +1,9 @@
+Gain 	Line Following Performance
+0.8 	Ok but the speed is quite fast
+1.0 	Ok
+1.2 	Ok but may run to Figure 8 map from the outer map
+1.4 	Ok but may run to Figure 8 map from the outer map
+1.6 	Not Ok (very shaky; may run to Figure 8 map from the outer map)
+
+0.1	Does NOT follow black line
+10	Follow line but extremely slow

@@ -1,0 +1,13 @@
+Use mbot intermediate map
+
+A2:
+CORRECTED u-turn: move for 400 degrees at 50 -50% speed
+
+A4:
+CORRECTED u-turn: move for 400 degrees at 50 -50% speed
+CORRECTED A-C Function: Last 2nd block should be move straight:0 for 45 degrees at 50% speed
+
+A5:
+CORRECTED u-turn: move for 400 degrees at 50 -50% speed
+CORRECTED H-D Function: 2nd block should be move straight:0 for 45 degrees at 50% speed
+

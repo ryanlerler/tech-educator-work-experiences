@@ -1,0 +1,8 @@
+Speed 	Line Following Performance
+100 % 	Not Ok
+90 % 		Not Ok
+80 % 		Not Ok
+60 % 		Not Ok
+30 % 		Ok
+
+As the speed of the robot increases, the accuracy will reduce and sometimes misses the line.

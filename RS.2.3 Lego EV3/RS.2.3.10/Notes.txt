@@ -1,0 +1,7 @@
+use mBot intermediate map
+A3: start from H, cover the blacks line at the upper T junctions
+A4: start from C, cover the blacks line at the upper T junctions
+
+
+use mBot basic map if the above is not working
+A3 & A4: the robot won't stop at the ending as desired because this map's ending is not a T shape

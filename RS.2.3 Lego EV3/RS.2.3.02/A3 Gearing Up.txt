@@ -1,0 +1,7 @@
+No of teeth - Driver Gear	8
+No of teeth - Driven Gear	40
+Gear Ratio :			40:8=5:1
+Gearing Type Up / Down		Up
+Speed Increase / Decrease	Decrease
+Torque Increase / Decrease	Increase
+

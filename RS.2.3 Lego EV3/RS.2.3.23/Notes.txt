@@ -1,0 +1,5 @@
+Run L13A2 Arm Movement codes to move the arm up only then the Grab Object function and the whole line following will work
+CORRECTED u-turn: move for 400 degrees at 50 -50% speed
+CORRECTED A-C Function: Last 2nd block should be move straight:0 for 45 degrees at 50% speed
+CORRECTED C-H Function: 2nd & 4th block should be move straight:0 for 45 degrees at 50% speed
+CORRECTED D-G Function: 2nd & 4th block should be move straight:0 for 45 degrees at 50% speed

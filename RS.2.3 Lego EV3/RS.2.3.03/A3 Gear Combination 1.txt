@@ -1,0 +1,7 @@
+No of teeth - Driver Gear	36
+No of teeth - Driven Gear	12
+Gear Ratio :			12:36=1:3
+Gearing Type Up / Down		-
+Speed Increase / Decrease	Increase
+Torque Increase / Decrease	Decrease
+Speed Ranking			

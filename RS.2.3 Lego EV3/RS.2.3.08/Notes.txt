@@ -1,0 +1,2 @@
+Put the robot on the map in such a way that the colour sensor fixing on its right faces the black line.
+The robot follows the black line but moves shakily. 
